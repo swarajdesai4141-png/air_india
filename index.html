@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air India - Fly to a Brighter Tomorrow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">AIR <span>INDIA</span><b>✦</b></a>
+
+        <nav>
+            <a href="#booking">Book</a>
+            <a href="#booking">Manage</a>
+            <a href="#benefits">Experience</a>
+            <a href="#benefits">Flying Returns</a>
+            <a href="#destinations">Offers</a>
+            <a href="#footer">About Us</a>
+        </nav>
+
+        <div class="nav-right">
+            <span>◎ IN</span>
+            <span>⌕</span>
+            <a href="#booking">Login / Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fly to a<br>Brighter Tomorrow</h1>
+            <p>Experience the warmth of Indian hospitality<br>
+                with Air India.</p>
+            <a href="#destinations" class="explore">Explore Our Network →</a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-wrapper" id="booking">
+
+        <div class="booking-tabs">
+            <a href="#booking" class="active">✈ Book Flight</a>
+            <a href="#booking">▣ Manage Booking</a>
+            <a href="#booking">♙ Check-in</a>
+            <a href="#booking">◷ Flight Status</a>
+        </div>
+
+        <form class="booking-form"
+            onsubmit="event.preventDefault(); alert('Demo website: connect a flight booking API to search real flights.');">
+
+            <div class="field">
+                <label for="from">From</label>
+                <input id="from" type="text" placeholder="Departure City or Airport" required>
+            </div>
+
+            <span class="swap">⇄</span>
+
+            <div class="field">
+                <label for="to">To</label>
+                <input id="to" type="text" placeholder="Arrival City or Airport" required>
+            </div>
+
+            <div class="field">
+                <label for="departure">Departure Date</label>
+                <input id="departure" type="date" required>
+            </div>
+
+            <div class="field">
+                <label for="return">Return Date</label>
+                <input id="return" type="date">
+            </div>
+
+            <div class="field">
+                <label for="passengers">Passengers</label>
+                <select id="passengers">
+                    <option>1 Adult, Economy</option>
+                    <option>2 Adults, Economy</option>
+                    <option>3 Adults, Economy</option>
+                    <option>4 Adults, Economy</option>
+                    <option>1 Adult, Business</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-btn">
+                Search Flights
+            </button>
+
+        </form>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+
+        <div class="benefit">
+            <div class="benefit-icon">♿</div>
+            <div>
+                <h3>Spacious Seats</h3>
+                <p>More comfort, more space</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">♨</div>
+            <div>
+                <h3>Delicious Meals</h3>
+                <p>Taste the world</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">★</div>
+            <div>
+                <h3>Award-Winning Service</h3>
+                <p>Recognised globally</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">▣</div>
+            <div>
+                <h3>Baggage Allowance</h3>
+                <p>Travel worry free</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations" id="destinations">
+
+        <div class="section-heading">
+            <h2>Popular Destinations</h2>
+            <a href="#destinations">View All Destinations →</a>
+        </div>
+
+        <div class="destination-grid">
+
+            <article class="destination-card delhi">
+                <div class="destination-info">
+                    <h3>Delhi</h3>
+                    <p>India</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+
+            <article class="destination-card mumbai">
+                <div class="destination-info">
+                    <h3>Mumbai</h3>
+                    <p>India</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+
+            <article class="destination-card bengaluru">
+                <div class="destination-info">
+                    <h3>Bengaluru</h3>
+                    <p>India</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+
+            <article class="destination-card dubai">
+                <div class="destination-info">
+                    <h3>Dubai</h3>
+                    <p>UAE</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p><strong>Air India</strong> <span>|</span> India's Flag Carrier</p>
+        <p class="footer-tagline">Bringing India Closer to the World ✦</p>
+    </footer>
+
+</body>
+
+</html>
